@@ -1,0 +1,25 @@
+{% extends "master.html" %}
+
+{% block content %}
+<h1>Signup</h1>
+
+<div class="container col-6">
+    <form action="/signup" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="email" required >
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>      
+            <input type="password" name="password" id="password" class="form-control" placeholder="password" required>
+        </div>
+    
+        <input type="submit" value = "Sign up" class="btn btn-primary">
+    </form>
+</div>
+
+{% endblock %}
