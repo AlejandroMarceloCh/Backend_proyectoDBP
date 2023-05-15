@@ -1,0 +1,60 @@
+{% extends "master.html" %}
+
+{% block content %}
+
+<style>
+    .producto-container {
+        margin-right: 50px; /* Ajustar el valor para aumentar o disminuir el espacio */
+    }
+    .move-right {
+        margin-left: 25px; 
+      }
+      
+</style>
+
+<h1 class="p-3 mb-2 bg-dark text-white">Products Available</h1>
+<h2>{{current_user.is_authenticated}}</h2>
+
+<div class="mb-10 d-flex flex-row move-right">
+    <div class="producto-container">
+        <p>Producto 1</p>
+        <button onclick="comprarProducto(1)" class="btn btn-info">Comprar</button>
+    </div>
+    <div class="producto-container">
+        <p>Producto 2</p>
+        <button onclick="comprarProducto(2)" class="btn btn-info">Comprar</button>
+    </div>
+    <div class="producto-container">
+        <p>Producto 3</p>
+        <button onclick="comprarProducto(3)" class="btn btn-info">Comprar</button>
+    </div>
+    <div class="producto-container">
+        <p>Producto 4</p>
+        <button onclick="comprarProducto(4)" class="btn btn-info">Comprar</button>
+    </div>
+    <div class="producto-container">
+        <p>Producto 5</p>
+        <button onclick="comprarProducto(5)" class="btn btn-info">Comprar</button>
+    </div>
+    <div class="producto-container">
+        <p>Producto 6</p>
+        <button onclick="comprarProducto(6)" class="btn btn-info">Comprar</button>
+    </div>
+    <div class="producto-container">
+        <p>Producto 7</p>
+        <button onclick="comprarProducto(7)" class="btn btn-info">Comprar</button>
+    </div>
+    <div class="producto-container">
+        <p>Producto 8</p>
+        <button onclick="comprarProducto(8)" class="btn btn-info">Comprar</button>
+    </div>
+</div>
+
+<script>
+    function comprarProducto(productoId) {
+        // Lógica para procesar la compra del producto seleccionado
+        console.log("Comprar producto " + productoId);
+    }
+</script>
+
+{% endblock %}

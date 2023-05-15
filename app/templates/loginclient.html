@@ -1,9 +1,9 @@
 {% extends "master.html" %}
 
 {% block content %}
-<h1>Welcome Employee!</h1>
+<h1>Welcome Client!</h1>
 <div class="container col-6">
-    <form action="/login" method="POST">
+    <form action="/loginclient" method="POST">
         <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
             <input type="email" name="email" id="email" class="form-control" placeholder="email" required >
@@ -14,7 +14,7 @@
         </div>
     
         <input type="submit" value = "Login" class="btn btn-primary">
-        <button onclick="window.location.href='/signup'" class="btn btn-secondary">¿No tienes cuenta? Crea una!</button>
+        <button onclick="window.location.href='/signupclient'" class="btn btn-secondary">¿No tienes cuenta? Crea una!</button>    
     </form>
 </div>
 

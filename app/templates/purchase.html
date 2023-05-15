@@ -1,0 +1,21 @@
+{% extends "master.html" %}
+
+{% block content %}
+
+<h1 class="p-3 mb-2 bg-dark text-white">Employee Interface</h1>
+<h2>{{current_user.is_authenticated}}</h2>
+
+<div>
+    <p>
+        <button onclick="" class="btn btn-info">Generar Estado de resultados</button>
+    </p>
+</div>
+<div>
+    <p>
+        <button onclick="window.location.href='/makepurchase'" class="btn btn-info">Make a purchase</button>
+    </p>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "master.html" %}
+
+{% block content %}
+<h1>Here you will be able to make a purchase for the enterprise</h1>
+<div class="container col-6">
+    <form action="" method="POST"> <!-- Agregar el action gogogo  -->
+        <div class="mb-3">
+            <label for="productName" class="form-label">Product Name:</label>
+            <input type="text" name="productName" id="productName" class="form-control" placeholder="Enter Product Name" required >
+        </div>
+        <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity:</label>      
+            <input type="text" name="quantity" id="quantity" class="form-control" placeholder="Enter Quantity" required>
+        </div>
+        <div class="mb-3">
+            <label for="amount" class="form-label">Amount:</label>      
+            <input type="text" name="amount" id="amount" class="form-control" placeholder="Enter Amount" required>
+        </div>
+        <div class="mb-3">
+            <label for="employeeName" class="form-label">Employee:</label>      
+            <input type="text" name="employeeName" id="employeeName" class="form-control" placeholder="Enter employee who's making the transaction" required>
+        </div>
+    
+        <input type="submit" value = "Submit Purchase" class="btn btn-primary">
+    </form>
+</div>
+
+
+{% endblock %}
